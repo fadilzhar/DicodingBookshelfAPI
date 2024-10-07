@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf API</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bookshelf API</h1>
+    <form id="book-form">
+      <input type="text" id="name" placeholder="Book Name" required>
+      <input type="number" id="year" placeholder="Year" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <textarea id="summary" placeholder="Summary"></textarea>
+      <input type="text" id="publisher" placeholder="Publisher" required>
+      <input type="number" id="pageCount" placeholder="Total Pages" required>
+      <input type="number" id="readPage" placeholder="Pages Read" required>
+      <label>
+        <input type="checkbox" id="reading"> Currently Reading
+      </label>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <div id="message"></div>
+
+    <div id="book-list">
+      <h2>Books List</h2>
+      <ul id="books"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
